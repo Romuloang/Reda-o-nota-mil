@@ -1,0 +1,271 @@
+.sugestao-link {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+}
+/* --- Reset CSS --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-family: Arial, sans-serif;
+}
+
+.pagina2 {
+    background: #f7e36a;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+    color: #000000;
+}
+.pagina2 h1, .pagina2 h2, .pagina2 nav, .pagina2 a, .pagina2 ul, .pagina2 li {
+    color: #064f6b !important;
+}
+.pagina2 nav ul li a {
+    border: 2px solid #2366c7;
+    background: #fff;
+    color: #9e9fa1;
+}
+.pagina2 nav ul li a:hover {
+    background-color: #3d82eb;
+    color: rgb(233, 201, 60);
+    border-color: #3d82eb;
+}
+.pagina2 nav ul li a {
+    color: #333;
+    background-color: #fff;
+}
+
+/* --- Animação de transição entre páginas --- */
+.fade-transition {
+    opacity: 1;
+    transition: opacity 0.6s cubic-bezier(0.4,0,0.2,1);
+}
+.fade-out {
+    opacity: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* --- Estilos Gerais de Layout --- */
+.pagina1, .pagina2, .paginaCultura, .paginaTecnologia, .paginaSaude, .paginaSociais, .paginaAmbiente, .paginaEducacao {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.pagina1 {
+    background-image: url('https://www.c7s.com.br/wp-content/uploads/2025/01/c7s-90-anos-bannersite-08.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+}
+
+/* --- Estilos do Cabeçalho e Títulos --- */
+header {
+    text-align: left;
+    padding: 10px 0;
+    border-bottom: 2px solid black;
+    margin-bottom: 20px;
+}
+
+.cabecalho-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 0 auto;
+    gap: 32px;
+}
+.cabecalho-botoes {
+    display: flex;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+h1 {
+    font-size: 2.2em;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* --- Estilos da Primeira Página (index.html) --- */
+.pagina1 nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Espaço entre os botões */
+}
+
+.pagina1 nav li a {
+    display: block;
+    width: 250px;
+    height: 10px;
+    border: 2px solid black;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.pagina1 nav li a:hover {
+    background-color: #3d82eb;
+    color: rgb(233, 201, 60);
+}
+
+.pagina2 nav ul li a {
+    transition: background-color 0.3s, color 0.3s;
+}
+.pagina2 nav ul li a:hover {
+    background-color: #000000;
+    color: rgb(233, 201, 60);
+}
+
+/* --- Estilos da Página de Eixos (artigos.html) --- */
+.pagina2 nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Espaço entre os eixos */
+}
+
+.pagina2 nav ul li a {
+    display: block;
+    width: 280px;
+    padding: 15px 20px;
+    border: 2px solid rgb(233, 201, 60);
+    text-align: center;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.pagina2 nav ul li a:hover {
+    background-color: #f0f0f0;
+}
+
+/* --- Estilos para as Páginas Temáticas (educacao.html, etc) --- */
+main {
+    padding: 20px;
+}
+
+main h2 {
+    text-align: left;
+}
+
+main ul li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+main hr {
+    margin: 40px 0;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+main h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+main dl dt {
+    font-weight: bold;
+    margin-top: 15px;
+    font-size: 1.1em;
+}
+
+main dl dd {
+    margin-left: 20px;
+}
+
+/* --- Estilos exclusivos para páginas temáticas --- */
+.paginaEducacao, .paginaCultura, .paginaTecnologia, .paginaSaude, .paginaSociais, .paginaAmbiente {
+    background: linear-gradient(120deg, #e0f7fa 0%, #fffde4 100%);
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+    border: 1px solid #b2ebf2;
+    padding: 32px 28px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    min-height: 400px;
+    transition: box-shadow 0.3s;
+}
+.paginaEducacao:hover {
+    box-shadow: 0 8px 32px rgba(33,150,243,0.18);
+    border-color: #2196f3;
+}
+.paginaCultura:hover {
+    box-shadow: 0 8px 32px rgba(255,87,34,0.18);
+    border-color: #ff5722;
+}
+.paginaTecnologia:hover {
+    box-shadow: 0 8px 32px rgba(76,175,80,0.18);
+    border-color: #4caf50;
+}
+.paginaSaude:hover {
+    box-shadow: 0 8px 32px rgba(76,175,80,0.18);
+    border-color: #43a047;
+}
+.paginaSociais:hover {
+    box-shadow: 0 8px 32px rgba(156,39,176,0.18);
+    border-color: #9c27b0;
+}
+.paginaAmbiente:hover {
+    box-shadow: 0 8px 32px rgba(139,195,74,0.18);
+    border-color: #8bc34a;
+}
+
+.paginaEducacao h2, .paginaCultura h2, .paginaTecnologia h2, .paginaSaude h2, .paginaSociais h2, .paginaAmbiente h2 {
+    color: #1976d2;
+    font-size: 2.1em;
+    margin-bottom: 18px;
+    text-shadow: 0 2px 8px rgba(33,150,243,0.08);
+}
+.paginaCultura h2 { color: #d84315; text-shadow: 0 2px 8px rgba(255,87,34,0.08); }
+.paginaTecnologia h2 { color: #388e3c; text-shadow: 0 2px 8px rgba(76,175,80,0.08); }
+.paginaSaude h2 { color: #388e3c; text-shadow: 0 2px 8px rgba(76,175,80,0.10); }
+.paginaSociais h2 { color: #6a1b9a; text-shadow: 0 2px 8px rgba(156,39,176,0.08); }
+.paginaAmbiente h2 { color: #558b2f; text-shadow: 0 2px 8px rgba(139,195,74,0.08); }
+
+.paginaEducacao ul li, .paginaCultura ul li, .paginaTecnologia ul li, .paginaSaude ul li, .paginaSociais ul li, .paginaAmbiente ul li {
+    background: #f5f5f5;
+    border-radius: 8px;
+    padding: 10px 16px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.paginaEducacao ul li:hover,
+.paginaCultura ul li:hover,
+.paginaTecnologia ul li:hover,
+.paginaSaude ul li:hover,
+.paginaSociais ul li:hover,
+.paginaAmbiente ul li:hover {
+    background-color: #3d82eb;
+    color: rgb(233, 201, 60);
+}
